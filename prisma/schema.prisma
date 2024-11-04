@@ -8,11 +8,11 @@ generator client {
   provider = "prisma-client-js"
 }
 
+//database url collected from env
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
-
 
 model User {
   id    Int     @default(autoincrement()) @id
